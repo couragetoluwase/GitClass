@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klav Test</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<html>
+
+<div id="form-body">
+    <header>
+    <h1 id="title"> Affiliate Application Form </h1>
+    
+    <p id="description"> This form is to be filled for an application to join be affiliated with our marketing program. By filling this form you agree to all our Terms and Conditions.</p>
+    
+    </header>
+    
+    <!--- THE HEADER -->
+    
+    <form id="my-form" action="">
+      <hr>
+      <!--- NAME FIELD --->
+      
+      <div id="name-field">
+      <label id="name-label"> Name </label>
+        <br>
+      <input type="text" id="name" placeholder="Enter your name here" required>
+      </div>
+      
+      <!--- EMAIL FIELD --->
+      
+      <div id="email-field">
+      <label id="email-label"> E-mail </label>
+        <br>
+      <input type="email" id="email" placeholder="Enter your email here" required>
+      </div>
+        
+      <!--- NUMBER FIELD --->
+      
+      <div id="number-field"> 
+      <label id="number-label"> Age </label>
+        <br>
+      <input type="number" id="number" placeholder="Age" min="18" max="50" required>
+      </div>
+        
+      <!--- DROPDOWN FIELD --->
+      
+      <div id="dropdown-field"> 
+      <label id="dropdown-label"> Which of our products do you want to market? </label>
+        <br>
+      <input type="dropdown" list="dropdown-list" id="dropdown" required>
+      <datalist id="dropdown-list">
+        <option value="Music"></option>
+        <option value="Cloud Storage"></option>
+        <option value="Food"></option>
+      </datalist>
+      </div>
+      <!--- RADIO FIELD --->
+      
+      <div id="radio-field"> 
+      <label id="radio-label">How many years experience do you have as a Marketer? </label>
+      <br>
+      <input type="radio" id="radio-beginner" name="radio-name" value="Beginner" required>
+      <label for="radio-beginner"> 0-12 months </label>
+      
+      <input type="radio" name="radio-name" id="radio-medium" value="Fairly Experienced">
+      <label for="radio-medium"> 13-36 months </label>
+      
+      <input type="radio" name="radio-name" id="radio-adept" value="Adept"> 
+      <label for="radio-adept"> 37-72 months </label>
+        
+      <input type="radio" name="radio-name" id="radio-expert" value="Expert"> 
+      <label for="radio-name"> 73 months upwards </label>
+      </div> 
+      
+      <!--- CHECKBOX FIELD --->
+      
+      <div id="checkbox-field"> 
+      <label id="checkbox-label"> Which of the following companies have you worked with? </label>
+      <br>
+     <input type="checkbox" name="checkbox-name" id="shopify" value="Shopify">
+      <label for="shopify"> SHOPIFY </label>
+      
+      <input type="checkbox" name="checkbox-name" id="Amazon" value="AmazonFBA">
+      <label for="Amazon"> Amazon FBA <label>
+        
+        <input type="checkbox" name="checkbox-name" id="Expertnaire" value="Expertnaire">
+        <label for="Expertnaire"> Expertnaire </label>
+        </div>
+        
+      <!--- COMMENTS FIELD --->
+        <div id="comments-field">
+        <label id="comment-label"> Any comments or suggestions? </label><br>
+        <input id="comments" type="textarea" placeholder="Write any additional comments here...">
+        </div>
+        
+        <input type="submit" form="my-form" id="submit">
+        
+        </div>
+    
+        </form>
+        
+     </div>
+
+</html>
+    
+    
+    
+    
+    
